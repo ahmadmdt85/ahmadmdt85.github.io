@@ -1,3 +1,4 @@
+/*Reset*/
 .{
     margin: 0;
     padding: 0;
@@ -13,21 +14,7 @@ body {
     background-size: cover;
        
 }
-.text {
-  background-color: white;
-  color: black;
-  font-size: 5vw; /* Responsive font size */
-  font-weight: bold;
-  margin: 0 auto; /* Center the text container */
-  padding: 1px;
-  width: 97%;
-  text-align: center; /* Center text */
-  position: absolute; /* Position text */
-  top: 50%; /* Position text in the middle */
-  left: 50%; /* Position text in the middle */
-  transform: translate(-50%, -50%); /* Position text in the middle */
-  mix-blend-mode: screen; /* This makes the cutout text possible */
-}
+
 
 main {
      background-color: rgba(170,180,170,.5);   
@@ -58,6 +45,23 @@ aside {
 a{
     text-decoration: none;
     color: #eee;
+}
+
+/*Home-page*/
+.text {
+  background-color: white;
+  color: black;
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 1px;
+  width: 97%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
 }
 
 /*Navigation bar*/
@@ -139,26 +143,23 @@ nav ul li a:hover::after{
     transform: scaleX(1);
 }
 
-/*Text resume*/
 
-#my-about {
-    color: #fff;
-    font-size: 3rem;
-    text-align: center;
-}
+/*About-page*/
+#body-about-me { font: 16px Helvetica, Sans-Serif; line-height: 24px; }
+        .clear { clear: both; }
+        #page-wrap { width: 62%; margin: 40px auto 60px; }
+        
+        .fn { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; color: #fff; }
 
-.class-about{
-    color: #fff;
-    font-size: 2rem;
-    border-right-color: chartreuse;
-    
-}
-
-#id-education p{
-    color: aqua;
-    font-size: 15px;
-}
-
+        .title-h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; color: #fff }
+        .title-h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; color: yellow; }
+        .title-p-about { margin: 0 0 16px 0; color: orange; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #fff; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; color: orange; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 3px solid burlywood;  }
+        dd { width: 600px; float: right; color: brown }
+        dd.clear { float: none; margin: 0; height: 15px; }
 /*Skills-page*/
 
 #title-myskills {
@@ -190,6 +191,7 @@ nav ul li a:hover::after{
 .css {width: 15%; background-color: #f44336;}
 .photoshop {width: 65%; background-color: #f44336;}
 .english {width: 50%; background-color: #f44336;}
+.germany {width: 35%; background-color: #f44336;}
 
 /*sills barside card*/
 
@@ -207,7 +209,7 @@ nav ul li a:hover::after{
   padding: 2px 16px;
 }
 
-/*contact*/
+/*contact-page*/
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -220,28 +222,27 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: burlywood;
 }
 
 /* Style the container/contact section */
 .cont-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 10px;
 }
 
 /* Create two columns that float next to eachother */
 .column {
   float: left;
-  width: 50%;
+  width: 90%;
   margin-top: 6px;
   padding: 20px;
 }
@@ -287,9 +288,6 @@ button {
   width: 100%;
   font-size: 18px;
 }
-
-
-
 
 button:hover, a:hover {
   opacity: 0.7;
